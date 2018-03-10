@@ -12,6 +12,7 @@
 		2F4A7E5D1FA4195B005553BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A7E5B1FA4195B005553BB /* Main.storyboard */; };
 		2F4A7E5F1FA4195B005553BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A7E5E1FA4195B005553BB /* Assets.xcassets */; };
 		2F4A7E621FA4195B005553BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F4A7E601FA4195B005553BB /* LaunchScreen.storyboard */; };
+		2FA7FF5D20548F7700F2F802 /* ThreemanDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7FF5C20548F7700F2F802 /* ThreemanDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2F4A7E5E1FA4195B005553BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F4A7E611FA4195B005553BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F4A7E631FA4195B005553BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FA7FF5C20548F7700F2F802 /* ThreemanDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreemanDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		2F4A7E561FA4195B005553BB /* Dicee */ = {
 			isa = PBXGroup;
 			children = (
-				2F4A7E571FA4195B005553BB /* AppDelegate.swift */,
-				2F4A7E591FA4195B005553BB /* ViewController.swift */,
-				2F4A7E5B1FA4195B005553BB /* Main.storyboard */,
+				2FA7FF5B20548F2400F2F802 /* Supporting Files */,
+				2FA7FF5A20548F1A00F2F802 /* Controller */,
+				2FA7FF5920548F1000F2F802 /* View */,
+				2FA7FF5820548EF500F2F802 /* Model */,
 				2F4A7E5E1FA4195B005553BB /* Assets.xcassets */,
 				2F4A7E601FA4195B005553BB /* LaunchScreen.storyboard */,
-				2F4A7E631FA4195B005553BB /* Info.plist */,
 			);
 			path = Dicee;
+			sourceTree = "<group>";
+		};
+		2FA7FF5820548EF500F2F802 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FA7FF5C20548F7700F2F802 /* ThreemanDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FA7FF5920548F1000F2F802 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F4A7E5B1FA4195B005553BB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FA7FF5A20548F1A00F2F802 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F4A7E571FA4195B005553BB /* AppDelegate.swift */,
+				2F4A7E591FA4195B005553BB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FA7FF5B20548F2400F2F802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F4A7E631FA4195B005553BB /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F4A7E5A1FA4195B005553BB /* ViewController.swift in Sources */,
+				2FA7FF5D20548F7700F2F802 /* ThreemanDataModel.swift in Sources */,
 				2F4A7E581FA4195B005553BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BT5YK2C4S;
-				INFOPLIST_FILE = Dicee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dicee/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomasgiraldo.Dicee;
@@ -292,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8BT5YK2C4S;
-				INFOPLIST_FILE = Dicee/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dicee/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tomasgiraldo.Dicee;
